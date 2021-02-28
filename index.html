@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatch: HTML5&CSS3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/63acc27762.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header > 
+        <a href="#head"><img id="logo" src="default-removebg-preview.png" alt=""></a>
+        <nav >
+            <a class="links" href="#scroll1">INTRO</a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a class="links" href="#scroll2">HTML5</a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a class="links" href="#scroll3">CSS3</a>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <a class="links" href="#scroll4">ABOUT ME</a>
+        </nav>
+    </header>
+    <main id="head">
+        <a href="#scroll1"><i id="arrow" class="fas fa-5x fa-angle-down"></i></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br id="scroll1">
+        <br>
+        <h1 id="intro" >INTRODUCTION</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="book">
+                <img  src="1618422101.jpg" alt="book" width="150px">
+                &nbsp; &nbsp;
+                <img id="jeff" src="jeffrey-way.jpg" alt="jeff" width="150px">
+                <br>
+                <img src="CSSBook.png" alt="book" width="150px">
+                &nbsp; &nbsp;
+                <img id="mag" src="download.png" alt="mag" width="150px">
+            </div>
+        <p id="introp">
+            Hello everyone, in this page we will cover some informations and facts about HTML5 and CSS3 with two books as reference, the first one Decoding HTML5 by Jeffrey Way and the second is Mastering CSS3 For Web Development by Smashing Magazine.
+            <br>
+            Before we start, i wanted to mention that these books are truly great i enjoyed reading them it took me a couple of weeks to complete them but i have learned a lot of new cool stuff that i will share later.
+            <br>
+            Continue reading to find more.
+
+            
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br id="scroll2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 id="html">HTML5</h1>
+        <br>
+        <br>
+        <br>
+        <img id="htmlimg1" width="400px" src="slide_2.jpg" alt="">
+            <p id="htmlp2">
+        <p id="htmlp1">
+            Let's start by HTML5 and its history,
+            <br>
+            The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999. After alot of versions it was either XHTML2 or HTML5, and here the choice of HTML5 was dictatorious by Lan Hickson.
+            </p>
+            <br>
+            <br><img id="htmlimg2" width="350px" src="artworks-000581141591-5vfb2k-t500x500.jpg" alt="">
+            <p id="htmlp2">
+            What is different in HTML5?    
+            <br>
+            Without going deep in details, 
+            <br>
+            <ul id="list">
+            <li>Shortened DOCTYPE.</li> 
+            <li>New semantic tags.</li>
+            <li>Native audio and video.</li>
+            <li>Creating complex games/graphics with canvas.</li>
+            <li>Access to Javascript APIs.</li>
+            <li>No need to meaningless class names.</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+        <p id="cood">One of the Javascript API is the geolocation.
+            <br>
+            Click the button to get your coordinates.</p>
+
+<button id="but" onclick="getLocation()">Try It</button>
+<br>
+<br>
+<br>
+<br>
+
+<p id="demo">
+
+<script id="loc">
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+
+</script>
+</p>
+<br>
+<br>
+<br><br><br><br>
+<div class="imex1">
+
+<br>
+</div>
+<br>
+<br>
+
+<h1 id="formsh">Let’s take a stroll through some of the new options of forms.</h1>
+<br>
+<br>
+<img id="fimg" src="html5-forms.PNG" width="500px" alt="">
+<br>
+<br><br>
+<br>
+<br>
+<br>
+        <dl id="htmldl">
+            <dd>Range</dd>
+            <dt>The input elements of type range let the user specify a numeric value which must between two given values</dt>
+            <br>
+            <dd>Date</dd>
+            <dt>The input elements of type="date" create input fields that let the user enter a date.</dt>
+            <br>
+            <dd>Number</dd>
+            <dt>The input elements of type number are used to let the user enter a number.</dt>
+            <br>
+            <dd>Select</dd>
+            <dt>The select element represents a control that provides a menu of options</dt>
+            <br>
+            <dd>File</dd>
+            <dt>Defines a file-select field and a "Browse" button for file uploads.</dt>
+            <br>
+            <dd>Progress</dd>
+            <dt>The progress element should represent the completion progress
+            of a task.</dt>
+            <br>
+            <dd>Meter</dd>
+            <dt>The meter tag can be used to provide a graphical display for a
+            particular value.</dt>
+            <br>
+            <dd>Color</dd>
+            <dt>The input type="color" defines a color picker.</dt>
+        </dl>
+<br>
+<br>
+
+<h1 id="medh">HTML5 Multimedia</h1>
+<br><br><br>
+<p id="medp">Multimedia comes in many different formats. It can be almost anything you can hear or see, examples: Pictures, music, sound, video, animation...
+    <br>
+Web pages often contain multimedia elements of different types and formats.
+<br>
+<dl id="meddl">
+    <dd>Videos</dd>
+    <dt>Before HTML5, there was no standard for showing videos on a web page, videos could only be played with a plug-in (like flash).
+    <br>
+    The HTML5 &lt;video&gt; element specifies a standard way to embed a video in a web page</dt>
+        <br>
+        <dd>Audios</dd>
+        <dt>Text between the &lt;audio&gt; and &lt;/audio&gt; tags will display in browsers that do not support the audio element. <br>
+        Multiple &lt;source&gt; elements can link to different audio files.</dt>
+</dl>
+</p>
+<img id="medim" src="media.png" width="450px" alt="">
+<hr id="hr2">
+        <br id="scroll3">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 id="css">CSS3</h1>
+        <br>
+        <img id="hc" width="400px" src="hhcc.webp" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <p id="cssp">
+            Why start using CSS3 along with HTML5?
+            <br>
+            <ul id="list2">
+                <li>More robust pages.</li>
+                <li>More playing for designers and developers.</li>
+                <li>More exciting landscape to attract new clientele.</li>
+                <li>Reduced development time.</li>
+                <li>No need the many hacks and workarounds used before.</li>
+            </ul>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 id="char">Characteristics of modern CSS websites:</h1>
+        <br>
+        <br>
+        <br>
+        <div class="imex1">
+        <img  width="400px" src="partners_blog_progressive_enhancement_hero_e1db29d2-6a0e-4df9-8ed9-5888d27940e0.gif" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img width="400px" height="180px" src="download (1).png" alt=""> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img width="400px" height="180px" src="modular.jpg" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <img width="400px" height="180px" src="offic.png" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <img width="400px" height="180px" src="typo.jpg" alt="">
+        </div> 
+        <br>
+        <br>
+        <dl>
+            <dd>Progressively enhanced</dd>
+            <br>
+            <dt>It is a strategy that puts emphasis on web content first, it involves separating the presentation semantics from the content, with presentation being implemented in one or more optional layers, activated based on aspects of the browser or Internet connection of the user.
+            </dt>
+            <br>
+            <br>
+            <dd>Adaptive to diverse users</dd>
+            <br>
+            <dt>Web pages have to accommodate the diverse range of
+                browsers, devices, screen resolutions, font sizes, assistive technologies and other factors that users bring to the table.
+                so it is important to consider the browser, the platform, the devices, the screen resolution and other factors.</dt>
+                <br>
+                <br>
+            <dd>Modular</dd>
+            <br>
+            <dt>Modular CSS can be broken down into chunks
+                that work independently to create design components that can themselves.
+                be reused independently.</dt>
+                <br>
+                <br>
+            <dd>Efficient</dd>
+            <br>
+            <dt>A website is effective when both the users and the owners achieve goals for the site. For the users, normally some kind of sequence is involved. First, users must know about the site, then they find the site on the web, then they find the page they want, with the information they want.</dt>
+            <br>
+            <br>
+            <dd>Typographically rich</dd>
+            <br>
+            <dt>concept of creating readable yet uniquelooking
+                text by applying tried and true typographic principles using the
+                newest technologies. Typography is one of the most rapidly evolving areaS of Web design.</dt>
+        </dl>
+        <br>
+        <br>
+        <br>
+        <div id="bg">TATCH</div>
+        <p id="tatchp">A cool thing that i found is to use an image as "color" for a text.
+            <br>
+            First, set the image you will be masking the text with as the
+            background-image. Then, set the -webkit-text-fill-color to
+            transparent and define the -webkit-background-clip property for the
+            text.</p>
+        
+        <a id="hovex" href="#">Just hover</a>
+        <p id="jh">Another thing that i personnally found it useful that i didnt use before is the hover fading effect, and it is also very simple.</p>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br id="scroll4">
+        <br>
+        <hr>
+        <h1 id="abt">ABOUT ME</h1>
+        <br>
+        <br>
+        <img id="me" src="me.jpeg" width="500px" alt="">
+        <p id="abtme">
+            My name is Lea Hdeib,
+            <br>
+            Tatch is just my nickname so i thought it will be good for the webpage name.
+            <br>
+            I am currently a second year computer science student at the lebanese university, focusing on the web development path.
+            <br><br><br>
+            <a class="ins" href="https://www.instagram.com/lea_hdeib/"><i class="fab fa-3x fa-instagram"></i></a>
+            &nbsp; &nbsp; &nbsp;
+            <a class="fb" href="https://www.facebook.com/lea.hdeib.7/"><i class="fab fa-2x fa-facebook-f"></i></a>
+        
+        </p>
+    </main>
+</body>
+</html>
